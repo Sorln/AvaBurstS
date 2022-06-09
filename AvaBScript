@@ -1,0 +1,80 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Avatar Burst Mini Script                            (Sorln#3037)", "GrapeTheme")
+local Tab = Window:NewTab("Role")
+local Section = Tab:NewSection("When you get into a game choose the person you want")
+local Section = Tab:NewSection("Note: Gotta do it during selection")
+local Section = Tab:NewSection("Includes Gamepass Charthers")
+Section:NewButton("Aang", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Aang"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Katara", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Katara"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Zuko", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Zuko"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Toph", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Toph"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Kora Avatar GP", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Kora"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Mako", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Mako"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Aang avatar GP", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "AangAS"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Azula", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Azula"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Bolin", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Bolin"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Jinora", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Jinora"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+Section:NewButton("Ozai Gamepass", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Ozai"
+
+game:GetService("ReplicatedStorage").Picked:FireServer(ohString1)
+end)
+local Tab = Window:NewTab("Powers")
+local Section = Tab:NewSection("The power is in your hands now SLAY :D")
+Section:NewButton("Avatar State works for any Charther", "ButtonInfo", function()
+    print("Clicked")
+    local ohString1 = "Transform"
+
+game:GetService("Players").LocalPlayer.Backpack["Avatar State"].Main.RemoteFunction:InvokeServer(ohString1)
+end)
